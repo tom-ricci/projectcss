@@ -1,0 +1,35 @@
+:root {
+    --bg-light: var(--header-bgColor, var(--color-header-bg)) !important;
+    --bg-dark: rgb(13, 17, 23) !important;
+}
+
+projects-v2 div[aria-label='Project navigation'] {
+    background-color: var(--bg-light) !important;
+}
+
+#memex-project-view-root > div:nth-child(1) > div {
+    background-color: var(--bg-light) !important;
+}
+
+div[style="position: relative; z-index: 1;"] > div[height="auto"][width="auto"][role="dialog"][aria-modal="true"][style="left: 0px; --styled-overlay-visibility: visible;"] {
+    box-shadow: none !important;
+    height: 0 !important;
+}
+
+body > div.logged-in.env-production.page-responsive.height-full.d-flex.flex-column > div.position-relative.js-header-wrapper > header > div.d-flex.width-full > :first-child {
+    display: none !important;
+}
+
+div[style="position: relative; z-index: 1;"] > div[height="auto"][width="auto"][role="dialog"][aria-modal="true"][style="left: 0px; --styled-overlay-visibility: visible;"] > :nth-child(-n+2) {
+    position: fixed !important;
+    top: 0 !important;
+    background-color: var(--overlay-backdrop-bgColor, var(--color-primer-canvas-backdrop)) !important;
+}
+
+div[role="grid"][data-testid="table-root"] {
+    background-color: var(--bg-dark) !important;
+}
+
+div[data-testid="omnibar-container"] {
+    box-shadow: none !important;
+}
